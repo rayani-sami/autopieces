@@ -1,0 +1,276 @@
+/* ============================================
+   AutoPart.tn - Styles principaux
+   Bootstrap 5.3 + Customisation
+   ============================================ */
+
+/* Variables */
+:root {
+    --ap-red: #e74c3c;
+    --ap-red-dark: #c0392b;
+    --ap-dark: #1a1a2e;
+    --ap-gray: #f8f9fa;
+    --ap-border: #e9ecef;
+    --ap-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    --ap-shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* Typography */
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #333; }
+a { color: var(--ap-red); }
+a:hover { color: var(--ap-red-dark); }
+
+/* ============================================
+   HEADER
+   ============================================ */
+.topbar { font-size: 12px; }
+.topbar a { transition: color 0.2s; }
+.topbar a:hover { color: #fff !important; text-decoration: underline !important; }
+.header { z-index: 1020; transition: box-shadow 0.2s; }
+.logo-text { line-height: 1.1; letter-spacing: -0.5px; }
+.vehicle-bar { border-left: 4px solid #198754; font-size: 14px; }
+
+/* Mega Menu */
+.mega-menu {
+    min-width: 860px;
+    border: none;
+    box-shadow: var(--ap-shadow-lg);
+    border-radius: 12px;
+    padding: 0;
+}
+.mega-menu > li > div { padding: 24px; }
+@media (max-width: 992px) {
+    .mega-menu { min-width: 100%; border-radius: 0; }
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-danger {
+    background-color: var(--ap-red);
+    border-color: var(--ap-red);
+}
+.btn-danger:hover, .btn-danger:focus {
+    background-color: var(--ap-red-dark);
+    border-color: var(--ap-red-dark);
+}
+.btn-outline-danger {
+    color: var(--ap-red);
+    border-color: var(--ap-red);
+}
+.btn-outline-danger:hover {
+    background-color: var(--ap-red);
+    border-color: var(--ap-red);
+}
+.btn-whatsapp {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: white;
+}
+.btn-whatsapp:hover { background-color: #1da851; color: white; }
+
+/* ============================================
+   CARDS & PRODUCT
+   ============================================ */
+.category-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ap-shadow-lg) !important;
+}
+
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ap-shadow-lg) !important;
+}
+.product-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    overflow: hidden;
+}
+.product-img-wrap img {
+    transition: transform 0.3s ease;
+}
+.product-card:hover .product-img-wrap img {
+    transform: scale(1.05);
+}
+
+.hover-card { transition: box-shadow 0.2s ease; }
+.hover-card:hover { box-shadow: var(--ap-shadow-lg) !important; }
+
+.hover-link { transition: all 0.2s; display: block; }
+.hover-link:hover { color: var(--ap-red) !important; padding-left: 6px; }
+
+/* ============================================
+   FORMS
+   ============================================ */
+.form-control:focus, .form-select:focus {
+    border-color: var(--ap-red);
+    box-shadow: 0 0 0 0.2rem rgba(231, 76, 60, 0.2);
+}
+.input-group-text { background-color: #f8f9fa; }
+
+/* ============================================
+   BADGES & STATUS
+   ============================================ */
+.badge { font-weight: 500; letter-spacing: 0.3px; }
+
+/* ============================================
+   ALERTS
+   ============================================ */
+.alert-success-subtle {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+}
+.alert-info-subtle {
+    background-color: #cff4fc;
+    border-color: #b6effb;
+    color: #055160;
+}
+.alert-warning-subtle {
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    color: #664d03;
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+.pagination .page-link { color: var(--ap-red); border-color: var(--ap-border); }
+.pagination .page-item.active .page-link {
+    background-color: var(--ap-red);
+    border-color: var(--ap-red);
+}
+.pagination .page-link:hover { color: var(--ap-red-dark); }
+
+/* ============================================
+   BREADCRUMB
+   ============================================ */
+.breadcrumb-item a { color: var(--ap-red); text-decoration: none; }
+.breadcrumb-item a:hover { text-decoration: underline; }
+.breadcrumb-item + .breadcrumb-item::before { color: #adb5bd; }
+
+/* ============================================
+   ADMIN SIDEBAR
+   ============================================ */
+.sidebar { overflow-y: auto; scrollbar-width: thin; }
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+.nav-section { padding: 12px 20px 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #6c757d; }
+
+/* ============================================
+   ADMIN TABLES
+   ============================================ */
+.table > :not(caption) > * > * { padding: 10px 12px; }
+.table th { font-weight: 600; font-size: 13px; }
+.table td { font-size: 14px; }
+
+/* ============================================
+   CART
+   ============================================ */
+.cart-count { font-size: 10px; min-width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; }
+
+/* ============================================
+   HERO
+   ============================================ */
+.carousel-item img { object-fit: cover; }
+.hero-default { min-height: 300px; display: flex; align-items: center; }
+
+/* ============================================
+   PRODUCT DETAIL
+   ============================================ */
+.product-thumbnails img { cursor: pointer; transition: border-color 0.2s; }
+.product-thumbnails img:hover { border-color: var(--ap-red) !important; }
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer a:hover { color: #fff !important; }
+
+/* ============================================
+   UTILITY
+   ============================================ */
+.cursor-pointer { cursor: pointer; }
+.text-ap-red { color: var(--ap-red) !important; }
+.bg-ap-red { background-color: var(--ap-red) !important; }
+.border-ap-red { border-color: var(--ap-red) !important; }
+.fw-600 { font-weight: 600; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 576px) {
+    .mega-menu { display: none !important; }
+    .product-card .btn { padding: 4px 8px; font-size: 12px; }
+    .topbar .d-none { display: none !important; }
+}
+
+@media (max-width: 768px) {
+    .sidebar { position: fixed; left: -250px; transition: left 0.3s; z-index: 1050; }
+    .sidebar.open { left: 0; }
+    .main-content { margin-left: 0 !important; }
+}
+
+/* ============================================
+   PRINT / INVOICE
+   ============================================ */
+@media print {
+    header, footer, nav, .sidebar, .btn, .alert { display: none !important; }
+    .main-content { margin: 0 !important; padding: 0 !important; }
+    .card { border: none !important; box-shadow: none !important; }
+}
+
+/* ============================================
+   SKELETON LOADING
+   ============================================ */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 0.4s ease forwards; }
+
+/* Scroll to top */
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    background: var(--ap-red);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: var(--ap-shadow);
+    transition: background 0.2s;
+}
+#scroll-top:hover { background: var(--ap-red-dark); }
+#scroll-top.visible { display: flex; }

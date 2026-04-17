@@ -1,0 +1,25 @@
+<?php
+return [
+    'show_warnings'   => false,
+    'orientation'     => 'portrait',
+    'defines'         => [],
+    'public_path'     => null,
+    'convert_entities'=> true,
+    'options'         => [
+        'font_dir'            => storage_path('fonts/'),
+        'font_cache'          => storage_path('fonts/'),
+        'temp_dir'            => sys_get_temp_dir(),
+        'chroot'              => realpath(base_path()),
+        'allowed_protocols'   => ['file://', 'http://', 'https://'],
+        'artifact_path_validation' => true,
+        'log_output_file'     => null,
+        'default_font'        => 'serif',
+        'dpi'                 => 96,
+        'enable_php'          => false,
+        'enable_javascript'   => true,
+        'enable_remote'       => true,
+        'font_height_ratio'   => 1.1,
+        'enable_css_float'    => false,
+        'enable_html5_parser' => true,
+    ],
+];

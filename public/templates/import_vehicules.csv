@@ -1,0 +1,11 @@
+make,model,engine,fuel_type,displacement,power_hp,engine_code,year_from,year_to
+Renault,Clio,1.2 16V 75ch,essence,1.2,75,D4F,2001,2012
+Renault,Clio,1.5 dCi 75ch,diesel,1.5,75,K9K,2001,2012
+Renault,Mégane,1.6 16V 115ch,essence,1.6,115,K4M,2002,2008
+Renault,Mégane,1.5 dCi 85ch,diesel,1.5,85,K9K,2003,2008
+Peugeot,206,1.4 75ch,essence,1.4,75,KFW,2000,2010
+Peugeot,207,1.6 HDi 90ch,diesel,1.6,90,9HZ,2006,2012
+Citroën,C3,1.4 HDi 70ch,diesel,1.4,70,8HX,2002,2010
+Volkswagen,Golf V,2.0 TDI 140ch,diesel,2.0,140,BKD,2003,2008
+Toyota,Corolla,1.6 VVT-i 110ch,essence,1.6,110,3ZZ-FE,2002,2007
+Hyundai,i30,1.6 CRDi 90ch,diesel,1.6,90,D4FB,2007,2012
